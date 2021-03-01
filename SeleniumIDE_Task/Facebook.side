@@ -1,0 +1,127 @@
+{
+  "id": "4d4f4e77-1fa9-4f15-864b-25fd3d391b3d",
+  "version": "2.0",
+  "name": "Facebook",
+  "url": "https://www.facebook.com",
+  "tests": [{
+    "id": "ef1a5f14-4cbf-4433-9f76-8525294f708a",
+    "name": "demo_facebook",
+    "commands": [{
+      "id": "9776c3af-efe1-49ec-8380-1146ed1605ee",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7b9ef5b2-26f2-4233-b367-8fd9ba331961",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x740",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "28aa8206-1317-4730-b25a-b28b3bcf2563",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//form[@id='u_0_e_H9']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0780bfc2-24e7-47c2-a546-90b228607acb",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//form[@id='u_0_e_H9']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "username1@gmail.com"
+    }, {
+      "id": "687e8c9f-0d1b-477e-ba93-b473affc9b3b",
+      "comment": "",
+      "command": "click",
+      "target": "id=pass",
+      "targets": [
+        ["id=pass", "id"],
+        ["name=pass", "name"],
+        ["css=#pass", "css:finder"],
+        ["xpath=//input[@id='pass']", "xpath:attributes"],
+        ["xpath=//div[@id='passContainer']/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7df0933d-741a-4d85-b803-e5ea1579503b",
+      "comment": "",
+      "command": "type",
+      "target": "id=pass",
+      "targets": [
+        ["id=pass", "id"],
+        ["name=pass", "name"],
+        ["css=#pass", "css:finder"],
+        ["xpath=//input[@id='pass']", "xpath:attributes"],
+        ["xpath=//div[@id='passContainer']/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "dummypass"
+    }, {
+      "id": "021829ac-b339-4c4c-afb2-69be283d7f40",
+      "comment": "",
+      "command": "click",
+      "target": "id=u_0_h_ft",
+      "targets": [
+        ["id=u_0_h_ft", "id"],
+        ["name=login", "name"],
+        ["css=#u_0_h_ft", "css:finder"],
+        ["xpath=//button[@id='u_0_h_ft']", "xpath:attributes"],
+        ["xpath=//form[@id='u_0_e_H9']/div[2]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Log In')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "aa16707e-6cbf-4eec-a7ed-57a5af8760e1",
+      "comment": "",
+      "command": "click",
+      "target": "id=pass",
+      "targets": [
+        ["id=pass", "id"],
+        ["name=pass", "name"],
+        ["css=#pass", "css:finder"],
+        ["xpath=//input[@id='pass']", "xpath:attributes"],
+        ["xpath=//div[@id='loginform']/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b67e7c66-d0b9-4d86-b28a-1e657c90f767",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Log in to Facebook",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "df37fcad-850b-492c-8ea1-618b1b4b0f01",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["ef1a5f14-4cbf-4433-9f76-8525294f708a"]
+  }],
+  "urls": ["https://www.facebook.com/"],
+  "plugins": []
+}
