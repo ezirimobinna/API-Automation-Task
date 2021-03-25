@@ -1,6 +1,6 @@
 package Search;
 
-import Addtocart.AddToCartPage;
+import AddToCart.AddToCartPage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -18,18 +18,17 @@ public class SearchPage {
     public void clickOnAddToCart(int index) throws InterruptedException
     {
         driver.findElements(AddToCartButton).get(index - 1).click();
-        Thread.sleep(5000);
+        Thread.sleep(7000);
     }
 
     //Click My Cart Button
     public AddToCartPage clickMyCartButton() throws InterruptedException
     {
         driver.findElement(MyCartButton).click();
-        Thread.sleep(3000);
+        Thread.sleep(5000);
         return new AddToCartPage(driver);
+
     }
-
-
 
 }
 

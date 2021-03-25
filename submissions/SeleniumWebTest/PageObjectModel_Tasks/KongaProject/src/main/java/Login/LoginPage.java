@@ -1,10 +1,11 @@
 package Login;
 
-import Home.HomePage;
+import Welcome.WelcomePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 public class LoginPage {
+
     private WebDriver driver;
     private By nameOfUser = By.id("username");
     private By passwordOfUser = By.id("password");
@@ -28,11 +29,12 @@ public class LoginPage {
     }
 
     //Click on the Login button
-    public HomePage clickLoginButton() throws InterruptedException
+    public WelcomePage clickLoginButton() throws InterruptedException
     {
         driver.findElement(loginButton).click();
         Thread.sleep(5000);
-        return new HomePage(driver);
+        return new WelcomePage(driver);
     }
 
 }
+

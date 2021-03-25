@@ -1,6 +1,6 @@
-package Addtocart;
+package AddToCart;
 
-import Checkout.CheckOutPage;
+import CheckOut.CheckOutPage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -30,7 +30,7 @@ public class AddToCartPage {
             itemNumber = Integer.parseInt(driver.findElement(totalItemCount).getText());
         }
         //Wait for the check out button to load
-        Thread.sleep(5000);
+        Thread.sleep(7000);
     }
 
     //Click on check out button
@@ -38,7 +38,8 @@ public class AddToCartPage {
     {
         driver.findElement(checkOutButton).click();
         //Wait for the checkout page to load
-        Thread.sleep(7000);
+        Thread.sleep(10000);
         return new CheckOutPage(driver);
     }
+
 }
