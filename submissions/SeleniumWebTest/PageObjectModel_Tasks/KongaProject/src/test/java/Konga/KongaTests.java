@@ -12,7 +12,7 @@ public class KongaTests extends SetupTest {
     {
         int addToCartButtonID = 1, numberOfItems = 1;
         String userId = "doxaforeal@gmail.com", password = "123doxa", item = "Apple MacBooks",
-                cardNumber = "5113 7862 3222 6544", date = "04/23", cvv = "171";
+                cardNumber = "5113 7862 3222 6544", date = "09/24", cvv = "255                                      ";
         //Instantiate random class
         Random random = new Random();
 

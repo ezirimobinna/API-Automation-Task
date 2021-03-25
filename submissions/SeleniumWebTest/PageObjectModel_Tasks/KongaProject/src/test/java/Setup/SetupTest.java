@@ -15,7 +15,7 @@ public class SetupTest {
     @BeforeTest
     public void setup()
     {
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\User\\TestCodeCamp_Programme\\Submission\\SeleniumWebdrivertests\\PageObjectModel_Tasks\\KongaProject\\resources\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\addmin\\TestCodeCamp_Programme\\submissions\\SeleniumWebTest\\PageObjectModel_Tasks\\KongaProject\\resources\\chromedriver.exe");
         //Initializing WebDriver
         driver = new ChromeDriver();
 
